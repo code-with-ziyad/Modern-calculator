@@ -1,0 +1,72 @@
+
+body {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    background-color: #ffffff;  
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+
+.button {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #d0d0d0;
+}
+
+.button:active {
+    background-color: #bbb;
+}
+
+/* Special Buttons (Operators) */
+.button[value="+"],
+.button[value="-"],
+.button[value="*"],
+.button[value="/"],
+.button[value="="],
+#clear {
+    background-color: #4e54c8;
+    color: white;
+}
+
+.button[value="="] {
+    background-color: #28a745;
+}
+
+#clear {
+    background-color: #dc3545;
+}
